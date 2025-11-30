@@ -1,0 +1,59 @@
+﻿@model IEnumerable<BeFit.Models.TrainingEntry>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<h3>
+    <a class="btn btn-primary" asp-action="Create">Dodaj wykonane ćwiczenie</a>
+</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TrainingSession)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExerciseType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Load)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reps)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrainingSession.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExerciseType.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Load)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Reps)
+            </td>
+            <td class="btn-group">
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edytuj</a> 
+                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> 
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

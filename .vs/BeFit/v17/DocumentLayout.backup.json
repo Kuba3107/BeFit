@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kuba\\Desktop\\proj-befit\\BeFit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{785CB0D9-A73B-499D-BCA6-47F9253EB81D}|BeFit\\BeFit.csproj|c:\\users\\kuba\\desktop\\proj-befit\\befit\\befit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{785CB0D9-A73B-499D-BCA6-47F9253EB81D}|BeFit\\BeFit.csproj|solutionrelative:befit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{785CB0D9-A73B-499D-BCA6-47F9253EB81D}|BeFit\\BeFit.csproj|c:\\users\\kuba\\desktop\\proj-befit\\befit\\befit\\controllers\\exercisetypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{785CB0D9-A73B-499D-BCA6-47F9253EB81D}|BeFit\\BeFit.csproj|solutionrelative:befit\\controllers\\exercisetypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\proj-befit\\BeFit\\BeFit\\Program.cs",
+              "RelativeDocumentMoniker": "BeFit\\Program.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\proj-befit\\BeFit\\BeFit\\Program.cs",
+              "RelativeToolTip": "BeFit\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T00:48:57.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExerciseTypesController.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\proj-befit\\BeFit\\BeFit\\Controllers\\ExerciseTypesController.cs",
+              "RelativeDocumentMoniker": "BeFit\\Controllers\\ExerciseTypesController.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\proj-befit\\BeFit\\BeFit\\Controllers\\ExerciseTypesController.cs",
+              "RelativeToolTip": "BeFit\\Controllers\\ExerciseTypesController.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAuwGgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T00:21:06.63Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

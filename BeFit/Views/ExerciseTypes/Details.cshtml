@@ -1,0 +1,23 @@
+﻿@model BeFit.Models.ExerciseType
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Szczegóły</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+    </dl>
+</div>
+<div class="btn-group">
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model?.Id">Edytuj</a>
+    <a class="btn btn-primary" asp-action="Index">Powrót</a>
+</div>

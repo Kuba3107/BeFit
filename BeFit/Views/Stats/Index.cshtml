@@ -1,0 +1,27 @@
+﻿@model IEnumerable<BeFit.Models.StatsViewModel>
+
+<h2>Statystyki ćwiczeń z ostatnich tygodni</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Nazwa ćwiczenia</th>
+            <th>Ile razy wykonano</th>
+            <th>Łączna liczba powtórzeń</th>
+            <th>Średnie obciążenie [kg]</th>
+            <th>Maksymalne obciążenie [kg]</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ExerciseName</td>
+                <td>@item.ExerciseCounter</td>
+                <td>@item.TotalReps</td>
+                <td>@item.AverageLoad</td>
+                <td>@item.MaxLoad</td>
+            </tr>
+        }
+    </tbody>
+</table>
