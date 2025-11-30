@@ -33,10 +33,10 @@ namespace BeFit.Controllers
         {
             var userId = _userManager.GetUserId(User);
             var exercises = await _context.TrainingEntries
-                                 .Where(e => e.UserId == userId)
-                                 .Include(e => e.TrainingSession)
-                                 .Include(e => e.ExerciseType)
-                                 .ToListAsync();
+                .Where(e => e.UserId == userId)
+                .Include(e => e.TrainingSession)
+                .Include(e => e.ExerciseType)
+                .ToListAsync();
             return View(exercises);
         }
 

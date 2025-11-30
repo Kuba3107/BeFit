@@ -295,3 +295,4 @@ C:\Users\Kuba\Desktop\proj-befit\BeFit\BeFit\bin\Debug\net8.0\runtimes\win\lib\n
 C:\Users\Kuba\Desktop\proj-befit\BeFit\BeFit\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Kuba\Desktop\proj-befit\BeFit\BeFit\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Kuba\Desktop\proj-befit\BeFit\BeFit\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Kuba\Desktop\proj-befit\BeFit\BeFit\obj\Debug\net8.0\BeFit.sourcelink.json

@@ -32,8 +32,8 @@ namespace BeFit.Controllers
         {
             var userId = _userManager.GetUserId(User);
             var sessions = await _context.TrainingSessions
-                                .Where(s => s.UserId == userId)
-                                .ToListAsync();
+                .Where(s => s.UserId == userId)
+                .ToListAsync();
             return View(sessions);
         }
 

@@ -5,9 +5,7 @@ namespace BeFit.Models
 {
     public class TrainingEntry
     {
-        
         public int Id { get; set; }
-
         public string UserId { get; set; } = null!;
 
         [ForeignKey("UserId")]
@@ -16,15 +14,16 @@ namespace BeFit.Models
         [Required]
         [Display(Name = "Sesja treningowa")]
         public int TrainingSessionId { get; set; }
+
         [Display(Name = "Sesja treningowa")]
         public TrainingSession? TrainingSession { get; set; }
 
         [Required]
         [Display(Name = "Nazwa ćwiczenia")]
         public int ExerciseTypeId { get; set; }
+
         [Display(Name = "Nazwa ćwiczenia")]
         public ExerciseType? ExerciseType { get; set; }
-
         
         [Range(0, 1000)]
         [Display(Name = "Obciążenie [kg]")]

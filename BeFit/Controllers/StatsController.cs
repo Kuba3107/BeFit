@@ -30,22 +30,22 @@ namespace BeFit.Controllers
                     ExerciseName = exerciseType.Name,
                     ExerciseCounter = _context.TrainingEntries
                         .Count(entry => entry.ExerciseTypeId == exerciseType.Id
-                                     && entry.TrainingSession.Start >= fourWeeksAgo
-                                     && entry.UserId == userId),
+                            && entry.TrainingSession.Start >= fourWeeksAgo
+                            && entry.UserId == userId),
                     TotalReps = _context.TrainingEntries
                         .Where(entry => entry.ExerciseTypeId == exerciseType.Id
-                                     && entry.TrainingSession.Start >= fourWeeksAgo
-                                     && entry.UserId == userId)
+                            && entry.TrainingSession.Start >= fourWeeksAgo
+                            && entry.UserId == userId)
                         .Sum(entry => entry.Sets * entry.Reps),
                     AverageLoad = _context.TrainingEntries
                         .Where(entry => entry.ExerciseTypeId == exerciseType.Id
-                                     && entry.TrainingSession.Start >= fourWeeksAgo
-                                     && entry.UserId == userId)
+                            && entry.TrainingSession.Start >= fourWeeksAgo
+                            && entry.UserId == userId)
                         .Average(entry => (double?)entry.Load) ?? 0,
                     MaxLoad = _context.TrainingEntries
                         .Where(entry => entry.ExerciseTypeId == exerciseType.Id
-                                     && entry.TrainingSession.Start >= fourWeeksAgo
-                                     && entry.UserId == userId)
+                            && entry.TrainingSession.Start >= fourWeeksAgo
+                            && entry.UserId == userId)
                         .Max(entry => (double?)entry.Load) ?? 0
                 }).ToListAsync();
 

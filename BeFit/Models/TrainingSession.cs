@@ -6,7 +6,6 @@ namespace BeFit.Models
     public class TrainingSession
     {
         public int Id { get; set; }
-
         public string UserId { get; set; } = null!;
 
         [ForeignKey("UserId")]
@@ -17,7 +16,6 @@ namespace BeFit.Models
         public DateTime Start { get; set; }
 
         [Required]
-
         [Display(Name = "Koniec sesji")]
         public DateTime End { get; set; }
  

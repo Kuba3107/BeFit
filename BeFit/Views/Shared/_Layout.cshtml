@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@{var controller = ViewContext.RouteData.Values["controller"]?.ToString();}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -18,8 +20,56 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <span class="flex-grow-1">
-                    </span>
+                    <ul class="navbar-nav flex-grow-1">
+                    @if(controller == "TrainingEntries")
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="ExerciseTypes" asp-action="Index">Rodzaje ćwiczeń</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="TrainingSessions" asp-action="Index">Sesje treningowe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Stats" asp-action="Index">Statystyki</a>
+                        </li>
+                    }
+                        else if (controller == "ExerciseTypes")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="TrainingEntries" asp-action="Index">Wpisy treningowe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="TrainingSessions" asp-action="Index">Sesje treningowe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Stats" asp-action="Index">Statystyki</a>
+                            </li>
+                        }
+                        else if (controller == "TrainingSessions")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="TrainingEntries" asp-action="Index">Wpisy treningowe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="ExerciseTypes" asp-action="Index">Rodzaje ćwiczeń</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Stats" asp-action="Index">Statystyki</a>
+                            </li>
+                        }
+                        else if (controller == "Stats")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="TrainingEntries" asp-action="Index">Wpisy treningowe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="ExerciseTypes" asp-action="Index">Rodzaje ćwiczeń</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="TrainingSessions" asp-action="Index">Sesje treningowe</a>
+                            </li>
+                        }
+					</ul>
                     <partial name="_LoginPartial" />
                 </div>
             </div>
